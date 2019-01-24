@@ -2,125 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9d26bfd-1364-4214-8a86-5136334417ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/JosefinSans/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/JosefinSans/OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-ExtraLight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/fonts/oswald/Oswald-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/fonts/oswald/Oswald-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/images/Logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/images/Logo.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/images/bg-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/images/bg-01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/images/icons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/images/icons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/images/icons/map-marker.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/images/icons/map-marker.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/images/img-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/images/img-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/js/map-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/js/map-custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/animsition/css/animsition.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/animsition/css/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/animsition/js/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/animsition/js/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/countdowntime/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="227">
+              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -216,6 +107,7 @@
       <find>contrib</find>
       <find>load</find>
       <find>static</find>
+      <find>It</find>
     </findStrings>
     <replaceStrings>
       <replace>static/mysite</replace>
@@ -242,6 +134,7 @@
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -346,7 +239,7 @@
       <workItem from="1548230907433" duration="181000" />
       <workItem from="1548236949157" duration="741000" />
       <workItem from="1548259363809" duration="5705000" />
-      <workItem from="1548349262559" duration="3096000" />
+      <workItem from="1548349262559" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="files updated.">
       <created>1548261672118</created>
@@ -355,17 +248,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548261672119</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Static files issue resolved.">
+      <created>1548353354131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548353354131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23286000" />
+    <option name="totallyTimeSpent" value="25043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2677761" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2677761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,10 +276,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.431562" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.431562" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -414,9 +314,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="files updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="files updated." />
+    <MESSAGE value="Static files issue resolved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Static files issue resolved." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/blog/post_list.html" />
@@ -556,8 +483,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="227">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
