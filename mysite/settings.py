@@ -25,7 +25,7 @@ SECRET_KEY = '03ff$=jzal-5=22@@(xwy+)p&rcyfq76-d6qzgkweti3n&ki1!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['muhammadtausif.pythonanywhere.com']
+ALLOWED_HOSTS = ['muhammadtausif.pythonanywhere.com','198.211.99.20', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -85,6 +85,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -125,5 +126,5 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

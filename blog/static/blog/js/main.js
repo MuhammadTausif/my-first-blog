@@ -30,9 +30,9 @@ ws.onmessage = function (event) {
     if(sender == 'proceed'){
         alert('proceed me post back');
     }
-
     $(location).attr('href', base_path + 'process.html');
     localStorage.setItem('answer_text', sender);
+
     if(sender == 'yes'){
         // alert('yes me back, answer is: ' + message_text );
     }

@@ -3,53 +3,51 @@
 <html lang="en">
 <head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{#    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>#}
     <title>Login V19</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{#    <!-- Latest compiled and minified CSS -->#}
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"#}
+{#          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">#}
+{##}
+{#    <!-- Optional theme -->#}
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"#}
+{#          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">#}
+{##}
+{#    <!-- Latest compiled and minified JavaScript -->#}
+{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"#}
+{#            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"#}
+{#            crossorigin="anonymous"></script>#}
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="https://www.tausifasia.com/nlp/images/icons/favicon.ico"/>
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="https://www.tausifasia.com/nlp/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css'%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/vendor/daterangepicker/daterangepicker.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/css/util.css">
-    <link rel="stylesheet" type="text/css" href="https://www.tausifasia.com/nlp/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
     <!--===============================================================================================-->
 
 </head>
 <body>
+
 <div class="header">
-    <img class="logo" src="https://www.tausifasia.com/nlp/images/logo.webp">
+    <img class="logo" src="{% static '/images/logo.webp'%}">
 </div>
 
 <div class="limiter">
@@ -95,21 +93,21 @@
 
 
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="{% static '/vendor/jquery/jquery-3.2.1.min.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/animsition/js/animsition.min.js"></script>
+<script src="{% static '/vendor/animsition/js/animsition.min.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/bootstrap/js/popper.js"></script>
-<script src="https://www.tausifasia.com/nlp/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="{% static '/vendor/bootstrap/js/popper.js'%}"></script>
+<script src="{% static '/vendor/bootstrap/js/bootstrap.min.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/select2/select2.min.js"></script>
+<script src="{% static '/vendor/select2/select2.min.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/daterangepicker/moment.min.js"></script>
-<script src="https://www.tausifasia.com/nlp/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="{% static '/vendor/daterangepicker/moment.min.js'%}"></script>
+<script src="{% static '/vendor/daterangepicker/daterangepicker.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/vendor/countdowntime/countdowntime.js"></script>
+<script src="{% static '/vendor/countdowntime/countdowntime.js'%}"></script>
 <!--===============================================================================================-->
-<script src="https://www.tausifasia.com/nlp/js/main.js"></script>
+<script src="{% static '/js/main.js'%}"></script>
 
 </body>
 </html>
