@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9d26bfd-1364-4214-8a86-5136334417ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/action.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/action.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/question.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,20 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="55" />
+            <state relative-caret-position="67">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/action.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="100">
+              <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -179,11 +180,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/question.html" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/nlp_project.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/action.html" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/question.html" />
       </list>
     </option>
   </component>
@@ -292,7 +293,7 @@
       <workItem from="1548349262559" duration="7159000" />
       <workItem from="1548383479598" duration="4379000" />
       <workItem from="1548421319068" duration="1694000" />
-      <workItem from="1548424331103" duration="10265000" />
+      <workItem from="1548424331103" duration="11690000" />
     </task>
     <task id="LOCAL-00001" summary="files updated.">
       <created>1548261672118</created>
@@ -371,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548435532656</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Quit Action edited.">
+      <created>1548436207882</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548436207882</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43687000" />
+    <option name="totallyTimeSpent" value="45112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -482,7 +490,8 @@
     <MESSAGE value="nlp added again." />
     <MESSAGE value="nlp with sqlite added again." />
     <MESSAGE value="Root issue resolved to connect SQLite DB." />
-    <option name="LAST_COMMIT_MESSAGE" value="Root issue resolved to connect SQLite DB." />
+    <MESSAGE value="Quit Action edited." />
+    <option name="LAST_COMMIT_MESSAGE" value="Quit Action edited." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -694,8 +696,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/action.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="100">
+          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
         </state>
       </provider>
     </entry>
