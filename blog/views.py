@@ -35,3 +35,6 @@ def process(request):
 def question(request):
     return render(request, 'blog/question.html', {})
 
+def action(request):
+    return render(request, 'blog/action.html', {})
+

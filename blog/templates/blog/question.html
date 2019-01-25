@@ -10,6 +10,8 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
     <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
@@ -32,23 +34,23 @@
 
 <body>
 <div class="header">
-    <img class="logo" src="images/logo.webp">
+    <img class="logo" src="{% static 'images/logo.webp  ' %}">
 </div>
 
 <div class="container">
     <h2 id="h2-text">Your Questions</h2>
     <p id="p-text">Some Instruction</p>
-    <form>
+    <form >
         <div class="form-group md-form mb-4 pink-textarea active-pink-textarea">
             <!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="1"></textarea> -->
             <textarea class="form-control textarea md-textarea form-control" rows="1" id="question" tabindex="1"
                       placeholder="Type Your Question Here"></textarea>
         </div>
-        <a href="index.html">
+        <a href="?ab=c">
             <button type="button" class="btn b1 btn-danger" tabindex="3">Quit</button>
         </a>
         <!-- <a href="action.html"> -->
-        <a>
+        <a href="action">
             <button type="button" class="btn b2 btn-primary open" id="proceed" tabindex="2">Proceed</button>
         </a>
 

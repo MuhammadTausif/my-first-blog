@@ -56,7 +56,8 @@ $("#proceed").on("click", function () {
     }
     else {
         localStorage.setItem('question_text', question_text);
-        $(location).attr('href', base_path + 'action.html');
+        // $(location).attr('href', 'action');
+        window.location.href = 'action';
     }
 });
 
