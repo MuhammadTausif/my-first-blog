@@ -2,7 +2,7 @@ import sqlite3
 from sqlite3 import Error
 
 def create_connection():
-    db_file = "nlp.db"
+    db_file = "nlp.sqlite3"
     try:
         conn = sqlite3.connect(db_file)
         return conn
