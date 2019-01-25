@@ -34,36 +34,35 @@
     <div class="header">
         <img class="logo" src="{% static 'images/logo.webp'%}">
     </div>
-
     <div class="container">
         <h2 id="h2-text">Your Questions</h2>
         <p id="p-text">Some Instruction</p>
-        <form>
+
+        <form action="/process">
             <div class="form-group md-form mb-4 pink-textarea active-pink-textarea">
                 <!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="1"></textarea> -->
-                <textarea disabled id="question_text2" class="form-control textarea md-textarea form-control" rows="1"
-                    id="question" placeholder="Type Your Question Here"></textarea>
+                <textarea id="question_text2" class="form-control textarea md-textarea form-control" rows="1"
+                          value="ABC" name="question_text2" placeholder="Type Your Question Here"></textarea>
             </div>
-
+            <div class="popup-overlay">
+                <button type="submit" class="close btn btn-success b1-pop open" id="yes1" tabindex="1"> Yes</button>
+            </div>
+            <div class="popup-overlay">
+                <!--Creates the popup content-->
+                <div class="popup-content">
+                    <h2 class="action-p">Are you looking for Action2?</h2>
+                    <a href="question">
+                        <button class=" btn btn-warn close b2-pop" tabindex="2">No</button>
+                    </a>
+                    <button type="submit" class="close btn btn-success b1-pop open" id="yes1" tabindex="1"> Yes</button>
+                </div>
+            </div>
         </form>
-        <div class="popup-overlay">
-            <!--Creates the popup content-->
-            <div class="popup-content">
-                <h2 class="action-p">Are you looking for Action2?</h2>
-                <a href="question">
-                    <button class=" btn btn-warn close b2-pop" tabindex="2">No</button>
-                </a>
-                <!--<a href="process.html">-->
-                <a>
-                    <button class="close btn btn-success b1-pop open" id="yes" tabindex="1"> Yes</button>
-                </a>
-            </div>
 
-
-        </div>
         <a href="question">
             <button type="button" id="action-btn" class="btn b1 btn-danger ">Quit</button>
         </a>
+
     </div>
 
 

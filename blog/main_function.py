@@ -1,11 +1,12 @@
 import sqlite3
 from sqlite3 import Error
+from os import path
+
+ROOT = path.dirname(path.realpath(__file__))
 
 def create_connection():
-    db_file = "D:\\Data\\Dev\\Python\\github\\chatterbot\\sqlite\\db\\pythonsqlitechatbot.db"
-    db_file = "pythonsqlitechatbot.db"
     try:
-        conn = sqlite3.connect(db_file)
+        conn = sqlite3.connect(path.join(ROOT, "corpus.db"))
         return conn
     except Error as e:
         print(e)
@@ -96,5 +97,5 @@ def get_answer(var_question):
         if( len(set(keywords_category3) & set(selected_keyword)) > 0):
             return selected_items[0] + ' and ' + selected_items[1] + ' can be ' + selected_keyword[1]
 
-#while True:
+# while True:
 #    print(get_answer(input('Question: ')))

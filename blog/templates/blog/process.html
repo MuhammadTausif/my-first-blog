@@ -1,12 +1,81 @@
-<html>
+{% load static %}
+{#{% load temp_answer %}#}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <title>Good</title>
+    <title>Process</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--===============================================================================================-->
 </head>
 <body>
-abc
-<input type="email" placeholder="Enter email">
-<input type="password" placeholder="Enter Password">
-<input type="button" value="Login">
+    <div class="header">
+        <img  class ="logo" src="{% static 'images/logo.webp' %}">
+    </div>
+
+   <div class="container">
+  <h2 id="h2-text">Answer</h2>
+  <p id="p-text">This answer helped you?</p>
+  <form>
+    <div class="form-group md-form mb-4 pink-textarea active-pink-textarea">
+        <!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="1"></textarea> -->
+{#      <input value="{{ answer }}" id="answer_text1" class="form-control textarea md-textarea form-control" rows="1" id="question_text2" placeholder="Type Your Question Here"></input>#}
+        <h2  class="form-control textarea md-textarea form-control">{{ answer }}</h2>
+    </div>
+
+  </form>
+  <!--<div class="popup-overlay">-->
+  <!--&lt;!&ndash;Creates the popup content&ndash;&gt;-->
+   <!--<div class="popup-content" >-->
+      <!--<p class="action-pp">Your Question in on hold and will be reviewed ASAP.</p>-->
+
+    <!--</div>-->
+
+
+    <!--</div>-->
+<a href="question">
+  <button type="button" id="action-btn" class="btn b1 btn-danger ">Quit</button>
+</a>
+</div>
+
+
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'js/main.js' %}"></script>
+
 </body>
 </html>

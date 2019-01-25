@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.utils import timezone
-from blog.nlp_project import login as main_login
+from django import template
 
+from blog.main_function import get_answer
+from blog.nlp_project import login as main_login
 from .models import Post
+
 
 # Create your views here.
 
@@ -30,7 +33,16 @@ def singup(request):
     return render(request, 'blog/singup.html', {})
 
 def process(request):
-    return render(request, 'blog/process.html', {})
+    from django import template
+
+    register = template.Library()
+
+    temp_question = request.GET.get('question_text2', '')
+    print('Question: {0}'.format(temp_question))
+    print('Answer: {0}'.format(get_answer(temp_question)))
+    temp_answer = get_answer(temp_question)
+
+    return render(request, 'blog/process.html', {'answer':temp_answer})
 
 def question(request):
     return render(request, 'blog/question.html', {})

@@ -1,7 +1,6 @@
 import sqlite3
-from os import path
 from sqlite3 import Error
-
+from os import path
 
 ROOT = path.dirname(path.realpath(__file__))
 
