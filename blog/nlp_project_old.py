@@ -1,15 +1,10 @@
 import sqlite3
-from os import path
 from sqlite3 import Error
-
-
-ROOT = path.dirname(path.realpath(__file__))
-
 
 def create_connection():
     db_file = "nlp.sqlite3"
     try:
-        conn = sqlite3.connect(path.join(ROOT, "nlp.db"))
+        conn = sqlite3.connect(db_file)
         return conn
     except Error as e:
         print(e)
@@ -23,6 +18,7 @@ def login(user_and_pass):
         password = user_and_pass[1]
         print('connectoin established')
         cur = conn.cursor()
+        sql ="SELECT * FROM users WHERE name='t@b.c' AND password='t'"
         sql ="SELECT * FROM users WHERE name='" + username +"' AND password='"+password+"'"
         cur.execute(sql)
         rows = cur.fetchall()
@@ -32,24 +28,6 @@ def login(user_and_pass):
             return 'login,Login fialed'
 
     return True
-
-def logina():
-    conn = create_connection()
-    with conn:
-        username = 'tausifasia@gmail.com'
-        password = 't'
-        print('connectoin established')
-        cur = conn.cursor()
-        sql ="SELECT * FROM users WHERE name='" + username +"' AND password='"+password+"'"
-        cur.execute(sql)
-        rows = cur.fetchall()
-        if len(rows)>0:
-            return 'login,Login OK'
-        else:
-            return 'login,Login fialed'
-
-    return True
-
 
 def singup(user_and_pass):
     conn = create_connection()
@@ -67,19 +45,3 @@ def singup(user_and_pass):
             return 'singup,Singup fialed'
 
     return True
-
-# print(logina())
-
-# conn = create_connection()
-# with conn:
-#     username = "abc"
-#     password = "pass"
-#     print('connectoin established')
-#     cur = conn.cursor()
-#     sql ="SELECT * FROM users WHERE name='" + username +"' AND password='"+password+"'"
-#     cur.execute(sql)
-#     rows = cur.fetchall()
-#     if len(rows)>0:
-#         print('login,Login OK')
-#     else:
-#         priint('login,Login fialed')
