@@ -158,6 +158,10 @@ $(".close, .popup-overlay").on("click", function () {
     $(document).ready(function() {
        $('#question_text2').val(localStorage.getItem('question_text')).css({ 'color': 'red', 'font-size': '150%'});
        $('#answer_text1').val(localStorage.getItem('answer_text')).css({ 'color': 'black', 'font-size': '150%'});
+       if(document.getElementById('singup_message').innerText == 'singup,Singup fialed'){
+           alert('Sing up failed, you may alreay been register,\nPlease login');
+       }
+
     });
 
 })(jQuery);

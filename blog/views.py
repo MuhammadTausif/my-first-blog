@@ -35,9 +35,12 @@ def singup(request):
         temp_user_pass.append(temp_email)
         temp_user_pass.append(temp_pass)
         temp_singup_message = main_singup(temp_user_pass)
+        print(temp_singup_message)
     if(temp_singup_message == 'singup,Singup OK'):
         print('Oh good, you are sing in')
         return render(request, 'blog/post_list.html', {})
+    elif(temp_singup_message == 'singup,Singup fialed'):
+        return render(request, 'blog/singup.html', {'message':temp_singup_message})
     return render(request, 'blog/singup.html', {})
 
 def process(request):
@@ -57,4 +60,3 @@ def question(request):
 
 def action(request):
     return render(request, 'blog/action.html', {})
-
