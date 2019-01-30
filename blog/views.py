@@ -45,10 +45,13 @@ def process(request):
 
     register = template.Library()
 
-    temp_question = request.GET.get('question_text2', '')
+    # temp_question = request.GET.get('question_text2', '')
+    temp_question = request.GET.get('question', '')
     print('Question: {0}'.format(temp_question))
     print('Answer: {0}'.format(get_answer(temp_question)))
     temp_answer = get_answer(temp_question)
+
+    # temp_answer = temp_question
 
     return render(request, 'blog/process.html', {'answer':temp_answer})
 

@@ -49,13 +49,18 @@ $("#login").on("click", function () {
 });
 
 $("#get_answer").on("click", function () {
-    var data = 'This is my question';
+    var data = $('#question').val();
+    // alert(data);
+
     window.location= '/process?question='+ data;
 });
 
-$("#quit_from_question, #yes_feedback, #no_feedback").on("click", function () {
-    // var data = 'This is my question';
+$("#quit_from_question").on("click", function () {
     window.location= '/';
+});
+
+$("#yes_feedback, #no_feedback").on("click", function () {
+    window.location= '/question';
 });
 
 $("#proceed").on("click", function () {
