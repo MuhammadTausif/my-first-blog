@@ -1,10 +1,7 @@
 from django.shortcuts import render
-from django.utils import timezone
-from django import template
 
-from blog.main_function import get_answer
+from blog.main_function_in_process import get_answer
 from blog.nlp_project import login as main_login, singup as main_singup
-from .models import Post
 
 
 # Create your views here.
@@ -37,8 +34,8 @@ def singup(request):
         temp_singup_message = main_singup(temp_user_pass)
         print(temp_singup_message)
     if(temp_singup_message == 'singup,Singup OK'):
-        print('Oh good, you are sing in')
         return render(request, 'blog/post_list.html', {})
+        # return render(request, '/', {})
     elif(temp_singup_message == 'singup,Singup fialed'):
         return render(request, 'blog/singup.html', {'message':temp_singup_message})
     return render(request, 'blog/singup.html', {})

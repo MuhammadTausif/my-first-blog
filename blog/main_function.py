@@ -27,6 +27,26 @@ def get_distinct_items():
 
     return items
 
+def get_distinct_items_and_save():
+    conn = create_connection()
+    conn = sqlite3.connect(path.join(ROOT, "answers.db"))
+    with conn:
+        cur = conn.cursor()
+        sql ="SELECT DISTINCT keyword1 from answers"
+        cur.execute(sql)
+        rows = cur.fetchall()
+        items = ["%s" % x for x in rows]
+        # items.append('partnumber123')
+        # items.append('product123')
+        # items.append('product456')
+
+        f = open('items_keyword1_from_answers.txt', 'w')
+        for item in items:
+            f.write("'"+item+"',")
+        f.close()
+
+    return items
+
 var_questoin = 'What is the right cap for SeriesC_pn 001?'
 var_questoin = 'What is the right cap for SeriesC_pn 002?'
 var_questoin = 'Share 3D drawing Series D part number 157?'
@@ -97,5 +117,6 @@ def get_answer(var_question):
         if( len(set(keywords_category3) & set(selected_keyword)) > 0):
             return selected_items[0] + ' and ' + selected_items[1] + ' can be ' + selected_keyword[1]
 
+get_distinct_items_and_save()
 # while True:
 #    print(get_answer(input('Question: ')))
