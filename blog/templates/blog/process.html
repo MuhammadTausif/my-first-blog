@@ -37,13 +37,17 @@
    <div class="container">
   <h2 id="h2-text">Answer</h2>
   <p id="p-text">This answer helped you?</p>
+
+
   <form>
-    <div class="form-group md-form mb-4 pink-textarea active-pink-textarea">
+      <div class="form-group md-form mb-4 mb-auto pink-textarea active-pink-textarea">
         <!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="1"></textarea> -->
 {#      <input value="{{ answer }}" id="answer_text1" class="form-control textarea md-textarea form-control" rows="1" id="question_text2" placeholder="Type Your Question Here"></input>#}
         <h2  class="form-control textarea md-textarea form-control">{{ answer }}</h2>
     </div>
-
+      <a href="question">
+          <button type="button" id="action-btn" class="btn b1 btn-danger ">Quit</button>
+      </a>
   </form>
   <!--<div class="popup-overlay">-->
   <!--&lt;!&ndash;Creates the popup content&ndash;&gt;-->
@@ -54,10 +58,8 @@
 
 
     <!--</div>-->
-<a href="question">
-  <button type="button" id="action-btn" class="btn b1 btn-danger ">Quit</button>
-</a>
-</div>
+
+   </div>
 
 
 <!--===============================================================================================-->

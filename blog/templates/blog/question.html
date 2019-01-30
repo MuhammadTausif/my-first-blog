@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">#}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">#}
+
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
     <!--===============================================================================================-->
@@ -39,17 +45,18 @@
     <h2 id="h2-text">Your Questions</h2>
     <p id="p-text">Please enter the correct part number.</p>
     <form class="row" action="action">
-        <div class="container-fluid text-center center-block ">
-
-            <textarea class=" col-sm-8 col-md-8 col-xs-4 col-centered text-center pink-textarea active-pink-textarea form-control center-block"
+        <div class=" col-md-8 col-sm-10 col-xs-8 container-fluid align-content-center text-center center-block ">
+            {#col-sm-8 col-md-6 col-xs-4#}
+            <textarea class="  col-centered text-center pink-textarea active-pink-textarea form-control center-block"
                       rows="2"
                       style="color:blue; margin: 0 auto; float: none;"
-                      id="question1" tabindex="1"
+                      id="question" name="question" tabindex="1"
                       placeholder="Type Your Question Here"></textarea>
 
-            <div class=" col-sm-8 col-md-8  col-xs-4 col-centered text-center" style="margin: auto">
-                <button class="btn btn-danger float-left">Quit</button>
-                <button class="btn btn-success float-right" type="submit">Proceed</button>
+            <div class=" col-sm-12 col-md-12  col-xs-4 col-centered" style="margin-top: 1em;  ">
+                {#            <div class="col-sm-8 col-md-8" style="margin-top: 1em;  background-color: red;">#}
+                <div class="btn btn-danger float-left" id="quit_from_question">Quit</div>
+                <div class="btn btn-success float-right" data-toggle="modal" data-target="#myModal">Proceed</div>
             </div>
             <!--<p>-->
             <!--<button href="/" type="button" class="btn b1 btn-danger" tabindex="3">Quit</button>-->
@@ -75,6 +82,28 @@
     <!--</div>-->
 
     <!--</form>-->
+</div>
+
+{#<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>#}
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">NLP Project</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you looking for Action2?</p>
+            </div>
+            <div class="modal-footer pull-left">
+                <button type="button" class="btn btn-default btn-outline-warning pull-left" data-dismiss="modal">No</button>
+                <button type="button" type="submit" class="btn btn-outline-success text-left " data-dismiss="modal" id="get_answer">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 

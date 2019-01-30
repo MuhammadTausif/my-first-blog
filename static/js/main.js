@@ -39,13 +39,23 @@ ws.onmessage = function (event) {
 
 };
 
-// Sign Up
+// Sign Up          
 $("#singup").on("click", function () {
     global_element = 'singup';
 });
 
 $("#login").on("click", function () {
     global_element = 'login';
+});
+
+$("#get_answer").on("click", function () {
+    var data = 'This is my question';
+    window.location= '/process?question='+ data;
+});
+
+$("#quit_from_question").on("click", function () {
+    // var data = 'This is my question';
+    window.location= '/';
 });
 
 $("#proceed").on("click", function () {
@@ -156,6 +166,7 @@ $(".close, .popup-overlay").on("click", function () {
     }
 
     $(document).ready(function() {
+
        $('#question_text2').val(localStorage.getItem('question_text')).css({ 'color': 'red', 'font-size': '150%'});
        $('#answer_text1').val(localStorage.getItem('answer_text')).css({ 'color': 'black', 'font-size': '150%'});
        if(document.getElementById('singup_message').innerText == 'singup,Singup fialed'){
