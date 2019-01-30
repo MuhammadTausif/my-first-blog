@@ -36,28 +36,23 @@
 
    <div class="container">
   <h2 id="h2-text">Answer</h2>
-  <p id="p-text">This answer helped you?</p>
 
 
-  <form>
-      <div class="form-group md-form mb-4 mb-auto pink-textarea active-pink-textarea">
-        <!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="1"></textarea> -->
-{#      <input value="{{ answer }}" id="answer_text1" class="form-control textarea md-textarea form-control" rows="1" id="question_text2" placeholder="Type Your Question Here"></input>#}
-        <h2  class="form-control textarea md-textarea form-control">{{ answer }}</h2>
-    </div>
-      <a href="question">
-          <button type="button" id="action-btn" class="btn b1 btn-danger ">Quit</button>
-      </a>
-  </form>
-  <!--<div class="popup-overlay">-->
-  <!--&lt;!&ndash;Creates the popup content&ndash;&gt;-->
-   <!--<div class="popup-content" >-->
-      <!--<p class="action-pp">Your Question in on hold and will be reviewed ASAP.</p>-->
+       <div class=" col-md-8 col-sm-10 col-xs-8 container-fluid align-content-center text-center center-block ">
+           <textarea class="  col-centered text-center pink-textarea active-pink-textarea form-control center-block"
+                     rows="2"
+                     disabled
+                     style="color:blue; margin: 0 auto; float: none;"
+                     id="question" name="question" tabindex="1"
+                     placeholder="Type Your Question Here"></textarea>
 
-    <!--</div>-->
-
-
-    <!--</div>-->
+           <div class=" col-sm-12 col-md-12  col-xs-4 col-centered" style="margin-top: 1em;  ">
+               <p id="p-text" style="margin-top: 2em">This answer helped you?</p>
+               {#            <div class="col-sm-8 col-md-8" style="margin-top: 1em;  background-color: red;">#}
+               <div class="btn btn-danger float-left" id="no_feedback">No</div>
+               <div class="btn btn-success float-right" id="yes_feedback">Yes</div>
+           </div>
+       </div>
 
    </div>
 
