@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from blog.main_function_in_process import get_answer
+from blog.main_function import get_answer
 from blog.nlp_project import login as main_login, singup as main_singup
 
 
