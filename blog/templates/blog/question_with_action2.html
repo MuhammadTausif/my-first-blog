@@ -57,13 +57,71 @@
             <div class=" col-sm-12 col-md-12  col-xs-4 col-centered" style="margin-top: 1em;  ">
                 {#            <div class="col-sm-8 col-md-8" style="margin-top: 1em;  background-color: red;">#}
                 <div class="btn btn-danger float-left" id="quit_from_question">Quit</div>
-                <div class="btn btn-success float-right"  id="get_answer" tabindex="2">Proceed</div>
+                <div class="btn btn-success float-right" data-toggle="modal" data-target="#myModal" tabindex="2">Proceed</div>
             </div>
-            </div>
+            <!--<p>-->
+            <!--<button href="/" type="button" class="btn b1 btn-danger" tabindex="3">Quit</button>-->
+            <!--<button type="button" href="action" class="btn b2 btn-primary open" id="proceed" tabindex="2">Send-->
+            <!--</button>-->
+            <!--</p>-->
+        </div>
 
     </form>
 
+    <!--<form class="row">-->
+    <!--<div class="form-group md-form mb-4 pink-textarea active-pink-textarea">-->
+    <!--<textarea class="" rows="1" id="question" tabindex="1"-->
+    <!--placeholder="Type Your Question Here"></textarea>-->
+    <!--<div>-->
+    <!--<a href="/">-->
+    <!--<button type="button" class="btn b1 btn-danger" tabindex="3">Quit</button>-->
+    <!--</a>-->
+    <!--<a href="action">-->
+    <!--<button type="button" class="btn b2 btn-primary open" id="proceed" tabindex="2">Send</button>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--</form>-->
 </div>
+
+{#<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>#}
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">NLP Project</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you looking for Action2?</p>
+            </div>
+            <div class="modal-footer pull-left">
+                <button type="button" class="btn btn-default btn-outline-warning pull-left" data-dismiss="modal">No</button>
+                <button type="button" type="submit" class="btn btn-outline-success text-left " data-dismiss="modal" id="get_answer" tabindex="3">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--<form class=" row " style=" background-color: red ">-->
+<!--<div class="form-group md-form mb-4 pink-textarea active-pink-textarea">-->
+<!--<textarea class="form-control textarea md-textarea form-control" rows="1" id="question" tabindex="1"-->
+<!--placeholder="Type Your Question Here"></textarea>-->
+<!--<a href="/">-->
+<!--<button type="button" class="btn b1 btn-danger" tabindex="3">Quit</button>-->
+<!--</a>-->
+<!--<a href="action">-->
+<!--<button type="button" class="btn b2 btn-primary open" id="proceed" tabindex="2">Send</button>-->
+<!--</a>-->
+<!--</div>-->
+
+<!--</form>-->
+
 
 <!--===============================================================================================-->
 <script src="{% static '/vendor/jquery/jquery-3.2.1.min.js' %}"></script>

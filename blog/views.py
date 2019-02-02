@@ -50,6 +50,8 @@ def process(request):
     print('Question: {0}'.format(temp_question))
     print('Answer: {0}'.format(get_answer(temp_question)))
     temp_answer = get_answer(temp_question)
+    if temp_answer == False:
+        temp_answer = "Your question is put on hold and would be answered ASAP. please."
 
     # temp_answer = temp_question
 
