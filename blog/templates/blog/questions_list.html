@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Questions | NLP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+<!--<table>-->
+<!--<tr>-->
+<!--<th>Field 1</th>-->
+<!--<th>Field 2</th>-->
+<!--<th>Field 3</th>-->
+<!--<th>Field 4</th>-->
+<!--</tr>-->
+<!--{% for key, values in questions_dict.items %}-->
+<!--<tr>-->
+<!--<td>{{ values.0 }}</td>-->
+<!--<td>{{ values.1 }}</td>-->
+<!--<td>{{ values.2 }}</td>-->
+<!--<td>{{ values.3 }}</td>-->
+<!--<td>{{ values.4 }}</td>-->
+<!--</tr>-->
+<!--{% endfor %}-->
+<!--</table>-->
+
+<p type="hidden" id="singup_message">{{ message }}</p>
+<div class="header">
+    <img class="logo" src="{% static 'images/Logo.webp' %}">
+</div>
+
+<div class="container card" style="margin-top: -12em; background-color: #fafafa; padding: 1em">
+                <span class="login100-form-title p-b-33">
+                    Questions
+                </span>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Question</th>
+            <th>Parameter 1</th>
+            <th>Parameter 2</th>
+            <th>Keyword 1</th>
+            <th>Keyword 2</th>
+            <th>Answer</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, values in questions_dict.items %}
+        <tr>
+            <td>{{ key}}</td>
+            <td>{{ values.0 }}</td>
+            <td>{{ values.1 }}</td>
+            <td>{{ values.2 }}</td>
+            <td>{{ values.3 }}</td>
+            <td>{{ values.4 }}</td>
+            <td>{{ values.6 }}</td>
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    <form action="/add_question">
+        <button href="/add_question" class=" btn btn-success float-right" id="singup">
+            Add New Question
+        </button>
+    </form>
+</div>
+
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+
+<!--===============================================================================================-->
+<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
