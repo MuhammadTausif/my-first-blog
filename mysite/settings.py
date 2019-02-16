@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'tutorial',
-    'django_tables2',
+    # 'django_tables2',
 ]
 
 # TEMPLATES.OPTIONS.context-processors , 'django.template.context_processors.request'
