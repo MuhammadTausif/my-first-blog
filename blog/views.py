@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.paginator import Paginator
 
@@ -20,7 +20,8 @@ def post_list(request):
     temp_response = main_login(temp_userName_pass)
     print('Response: '+temp_response)
     if(temp_response == 'login,Login OK'):
-        return render(request, 'blog/question.html')
+        return redirect('/question')
+        # return render(request, 'blog/question.html')
     return render(request, 'blog/post_list.html', {})
 
 def login(request):
@@ -37,7 +38,8 @@ def singup(request):
         temp_singup_message = main_singup(temp_user_pass)
         print(temp_singup_message)
     if(temp_singup_message == 'singup,Singup OK'):
-        return render(request, 'blog/post_list.html', {})
+        # return render(request, 'blog/post_list.html', {})
+        return redirect('/')
         # return render(request, '/', {})
     elif(temp_singup_message == 'singup,Singup fialed'):
         return render(request, 'blog/singup.html', {'message':temp_singup_message})
@@ -87,7 +89,14 @@ def add_question(request):
               '\nc: '+category
               )
         add_question_func(question,parameter1,parameter2,keyword1,keyword2,answer)
-        return render(request, 'blog/add_question.html', {})
+        # Redirectiong to list
+        contacts_orignal = get_questions('0', '20000')
+        page = request.GET.get('page')
+        contacts_paginator = Paginator(contacts_orignal, 5)
+        contacts = contacts_paginator.get_page(page)
+
+        # return render(request, 'blog/questions_list.html', {'contacts': contacts})
+        return redirect('/questions_list')
     return render(request, 'blog/add_question.html', {})
 
 def questions_list(request):
@@ -99,10 +108,14 @@ def questions_list(request):
     questions_dict = {i: list(questions[i]) for i in range(0, len(questions))}
 
     # Sample code
-    contacts_orignal = [('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa'),('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa'),('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa')]
     contacts_orignal = get_questions('0','20000')
     page = request.GET.get('page')
     contacts_paginator = Paginator(contacts_orignal, 5)
     contacts = contacts_paginator.get_page(page)
+
+    if page :
+        contacts = contacts_paginator.get_page(page)
+    else:
+        contacts = contacts_paginator.get_page(contacts.paginator.num_pages)
 
     return render(request, 'blog/questions_list.html', {'questions_dict':questions_dict, 'contacts': contacts})

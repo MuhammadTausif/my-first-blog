@@ -39,12 +39,17 @@
 </div>
 
 <div class="container card" style="margin-top: -12em; background-color: #fafafa; padding: 1em">
-                <span class="login100-form-title p-b-33">
-                    Questions
-                </span>
+    <span class="login100-form-title p-b-33">
+        Questions
+        <form action="/add_question">
+            <button href="/add_question" class=" btn btn-warning float-right" id="singup">
+            Add New Question
+            </button>
+        </form>
+    </span>
 
-    <input class="form-control" type="text" placeholder="Search question" style="padding: 20px"/>
-    <table class="table table-striped">
+    <input class="form-control" type="text" placeholder="Search question ** ( Demo)" style="padding: 20px"/>
+    <table class="table table-hover table-striped">
         <thead>
         <tr>
             <td>Question</td>
@@ -60,7 +65,9 @@
             <td>{{ contact.6 }}</td>
             <td>{{ contact.5 }}</td>
             <td>
-                <input class="btn btn-success" type="button" value='Detail'/>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Detail
+                </button>
             </td>
         </tr>
         {% endfor %}
@@ -83,11 +90,25 @@
         .btn {
 
         }
+
+
+
+
+
+
+
+
+
+
+
     </style>
     <ul id="pages" class="pagination">
         <span class="step-links">
         {% if contacts.has_previous %}
-            <a class="btn" href="?page=1">&laquo; first</a>
+
+            <a class="btn" href="?page=1">
+               &laquo;
+                first</a>
             <a class="btn" href="?page={{ contacts.previous_page_number }}">previous</a>
         {% endif %}
 
@@ -97,34 +118,99 @@
 
         {% if contacts.has_next %}
             <a class="btn" href="?page={{ contacts.next_page_number }}">next</a>
-            <a class="btn" href="?page={{ contacts.paginator.num_pages }}">last &raquo; </a>
+            <a class="btn" href="?page={{ contacts.paginator.num_pages }}">last &raquo;  </a>
         {% endif %}
     </span>
     </ul>
 
-    <form action="/add_question">
-        <button href="/add_question" class=" btn btn-success float-right" id="singup">
-            Add New Question
-        </button>
-    </form>
 
+    <!-- Model code -->
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">-->
+    <!--Launch demo modal-->
+    <!--</button>-->
 
-<!--===============================================================================================-->
-<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
-<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
-<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
-<!--===============================================================================================-->
-<script src="{% static 'js/main.js' %}"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Question Detail ** ( This is just demo)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover ">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Detail</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Question</td>
+                            <td>This is question</td>
+                        </tr>
+                        <tr>
+                            <td>Answer</td>
+                            <td>This is answer</td>
+                        </tr>
+                        <tr>
+                            <td>Parameter 1</td>
+                            <td>Item 1</td>
+                        </tr>
+                        <tr>
+                            <td>Parameter 2</td>
+                            <td>Item 2</td>
+                        </tr>
+                        <tr>
+                            <td>Keyword 1</td>
+                            <td>Togather</td>
+                        </tr>
+                        <tr>
+                            <td>Keyword 2</td>
+                            <td>Use</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Short Answer</td>
+                            <td>Yes</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-warning">Update Question</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 
