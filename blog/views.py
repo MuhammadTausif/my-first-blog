@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.paginator import Paginator
 
 from blog.main_function import get_answer
-from blog.question_function import get_questions
+from blog.question_function import get_questions, add_question_func
 from blog.nlp_project import login as main_login, singup as main_singup
 
 
@@ -85,36 +86,23 @@ def add_question(request):
               '\nk2: '+ keyword2 +
               '\nc: '+category
               )
+        add_question_func(question,parameter1,parameter2,keyword1,keyword2,answer)
         return render(request, 'blog/add_question.html', {})
     return render(request, 'blog/add_question.html', {})
 
-## posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    # temp_login_email = request.GET.get('email', '')
-    # temp_login_pass = request.GET.get('pass', '')
-    # temp_userName_pass = []
-    # temp_userName_pass.append(temp_login_email)
-    # temp_userName_pass.append(temp_login_pass)
-    #
-    # temp_response = main_login(temp_userName_pass)
-    # print('Response: '+temp_response)
-    # if(temp_response == 'login,Login OK'):
-    #     return render(request, 'blog/question.html')
-    # return render(request, 'blog/add_question.html', {})
-
 def questions_list(request):
-    # # posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    # temp_login_email = request.GET.get('email', '')
-    # temp_login_pass = request.GET.get('pass', '')
-    # temp_userName_pass = []
-    # temp_userName_pass.append(temp_login_email)
-    # temp_userName_pass.append(temp_login_pass)
-    #
-    # temp_response = main_login(temp_userName_pass)
-    # print('Response: '+temp_response)
-    # if(temp_response == 'login,Login OK'):
-    #     return render(request, 'blog/question.html')
 
-    questions = get_questions('0','50')
+    # Working code
+    questions = get_questions('0','100')
+    paginator = Paginator(questions, 5)  # Show 25 contacts per page
+    questions = paginator.get_page(1)
     questions_dict = {i: list(questions[i]) for i in range(0, len(questions))}
-    # questions_dict = questions
-    return render(request, 'blog/questions_list.html', {'questions_dict':questions_dict})
+
+    # Sample code
+    contacts_orignal = [('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa'),('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa'),('Aslam',202,'Karounta'),('Nasir',205,'Kot'),('Gulfraz',509,'Sohawa')]
+    contacts_orignal = get_questions('0','20000')
+    page = request.GET.get('page')
+    contacts_paginator = Paginator(contacts_orignal, 5)
+    contacts = contacts_paginator.get_page(page)
+
+    return render(request, 'blog/questions_list.html', {'questions_dict':questions_dict, 'contacts': contacts})

@@ -31,23 +31,7 @@
 </head>
 
 <body>
-<!--<table>-->
-<!--<tr>-->
-<!--<th>Field 1</th>-->
-<!--<th>Field 2</th>-->
-<!--<th>Field 3</th>-->
-<!--<th>Field 4</th>-->
-<!--</tr>-->
-<!--{% for key, values in questions_dict.items %}-->
-<!--<tr>-->
-<!--<td>{{ values.0 }}</td>-->
-<!--<td>{{ values.1 }}</td>-->
-<!--<td>{{ values.2 }}</td>-->
-<!--<td>{{ values.3 }}</td>-->
-<!--<td>{{ values.4 }}</td>-->
-<!--</tr>-->
-<!--{% endfor %}-->
-<!--</table>-->
+
 
 <p type="hidden" id="singup_message">{{ message }}</p>
 <div class="header">
@@ -59,43 +43,70 @@
                     Questions
                 </span>
 
+    <input class="form-control" type="text" placeholder="Search question" style="padding: 20px"/>
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>No</th>
-            <th>Question</th>
-            <th>Parameter 1</th>
-            <th>Parameter 2</th>
-            <th>Keyword 1</th>
-            <th>Keyword 2</th>
-            <th>Answer</th>
+            <td>Question</td>
+            <td>Answer</td>
+            <td>Category</td>
+            <td>Action</td>
         </tr>
         </thead>
         <tbody>
-        {% for key, values in questions_dict.items %}
+        {% for contact in contacts %}
         <tr>
-            <td>{{ key}}</td>
-            <td>{{ values.0 }}</td>
-            <td>{{ values.1 }}</td>
-            <td>{{ values.2 }}</td>
-            <td>{{ values.3 }}</td>
-            <td>{{ values.4 }}</td>
-            <td>{{ values.6 }}</td>
+            <td>{{ contact.0 }}</td>
+            <td>{{ contact.6 }}</td>
+            <td>{{ contact.5 }}</td>
+            <td>
+                <input class="btn btn-success" type="button" value='Detail'/>
+            </td>
         </tr>
         {% endfor %}
-
         </tbody>
     </table>
+
+    <style>
+        #pages {
+            background-color: #eaeaea;
+            padding: 10px;
+            border: 1px #aaaaaa solid;
+            color: gray;
+        }
+        #pages > span > a {
+            color: white;
+            padding: 5px;
+            background-color: #7f7f7f;
+        }
+
+        .btn {
+
+        }
+    </style>
+    <ul id="pages" class="pagination">
+        <span class="step-links">
+        {% if contacts.has_previous %}
+            <a class="btn" href="?page=1">&laquo; first</a>
+            <a class="btn" href="?page={{ contacts.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ contacts.number }} of {{ contacts.paginator.num_pages }}.
+        </span>
+
+        {% if contacts.has_next %}
+            <a class="btn" href="?page={{ contacts.next_page_number }}">next</a>
+            <a class="btn" href="?page={{ contacts.paginator.num_pages }}">last &raquo; </a>
+        {% endif %}
+    </span>
+    </ul>
+
     <form action="/add_question">
         <button href="/add_question" class=" btn btn-success float-right" id="singup">
             Add New Question
         </button>
     </form>
-</div>
-
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
 
 
 <!--===============================================================================================-->
