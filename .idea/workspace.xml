@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9d26bfd-1364-4214-8a86-5136334417ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/answers_small.db" beforeDir="false" afterPath="$PROJECT_DIR$/blog/answers_small.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/question_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/question_function.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/questions_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/questions_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/blog/question_function.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -85,10 +82,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+            <state relative-caret-position="526">
+              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#940#985#0" />
+                <element signature="e#1012#1700#0" />
+                <element signature="e#3762#4488#0" />
               </folding>
             </state>
           </provider>
@@ -97,13 +97,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/questions_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="228">
+              <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3425#3432#0" expanded="true" />
+                <element signature="n#style#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#4301#4308#0" expanded="true" />
                 <element signature="e#4160#4167#0" expanded="true" />
+                <element signature="e#5293#5300#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/add_question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -131,11 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get_distinct_items</find>
-      <find>ogo.webp</find>
-      <find>action2</find>
-      <find>quit</find>
-      <find>get_an</find>
       <find>yes</find>
       <find>corpus</find>
       <find>detailed_answer</find>
@@ -161,6 +173,11 @@
       <find>OPTION</find>
       <find>render</find>
       <find>answers_sm</find>
+      <find>detai</find>
+      <find>Question d</find>
+      <find>redi</find>
+      <find>first</find>
+      <find>search</find>
     </findStrings>
     <replaceStrings>
       <replace>static/mysite</replace>
@@ -231,31 +248,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="djangogirls" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangogirls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangogirls" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangogirls" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangogirls" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangogirls" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -716,7 +709,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550279216491</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Pagination of questions is done.">
+      <created>1550691168483</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1550691168483</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Question detail and search demos are added.">
+      <created>1550700040134</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1550700040135</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -827,8 +834,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Action page completed." />
-    <MESSAGE value="nlp added" />
     <MESSAGE value="nlp deleted" />
     <MESSAGE value="nlp added again." />
     <MESSAGE value="nlp with sqlite added again." />
@@ -852,7 +857,9 @@
     <MESSAGE value="&quot;polls&quot; no module found error degugging." />
     <MESSAGE value="&quot;django table2&quot; no module found error degugging." />
     <MESSAGE value="'Tutorial' was debugged." />
-    <option name="LAST_COMMIT_MESSAGE" value="'Tutorial' was debugged." />
+    <MESSAGE value="Pagination of questions is done." />
+    <MESSAGE value="Question detail and search demos are added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Question detail and search demos are added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1137,19 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/add_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1256,32 +1250,50 @@
     <entry file="file://$PROJECT_DIR$/blog/question_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/add_question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#select#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+        <state relative-caret-position="526">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#940#985#0" />
+            <element signature="e#1012#1700#0" />
+            <element signature="e#3762#4488#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/questions_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="228">
+          <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3425#3432#0" expanded="true" />
+            <element signature="n#style#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#4301#4308#0" expanded="true" />
             <element signature="e#4160#4167#0" expanded="true" />
+            <element signature="e#5293#5300#1" expanded="true" />
           </folding>
         </state>
       </provider>
