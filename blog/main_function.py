@@ -16,6 +16,17 @@ def create_connection():
 
     return None
 
+def get_distinct_items( colmun_name):
+    conn = create_connection()
+    with conn:
+        cur = conn.cursor()
+        sql ="SELECT DISTINCT "+ colmun_name +" from answers"
+        cur.execute(sql)
+        rows = cur.fetchall()
+        items = ["%s" % x for x in rows]
+
+    return items
+
 var_questoin1 = '"What is the right cap for SeriesC_pn 001?'
 var_questoin2 ="Send	the	datasheet	of	product123?"
 var_questoin3 = 'Can	product123	and	product456	be	combined?'
@@ -171,8 +182,18 @@ def execute_sql(selected_items, selected_keyword):
 
 def get_answer(var_question):
 
+
     var_items = parameters
     all_keywords = keywords
+
+    var_items_1 = get_distinct_items('parameter1')
+    var_items_2 = get_distinct_items('parameter2')
+    var_items = set( var_items_1 ) | set(var_items_2)
+
+    var_keywords_1 = get_distinct_items('keyword1')
+    var_keywords_2 = get_distinct_items('keyword2')
+    all_keywords = set( var_keywords_1 ) | set(var_keywords_2)
+
     var_questoin = var_question.lower()
     selected_items = []
     selected_keyword = []

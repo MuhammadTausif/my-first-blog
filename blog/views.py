@@ -3,9 +3,8 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator
 
 from blog.main_function import get_answer
-from blog.question_function import get_questions, add_question_func
+from blog.question_function import get_questions, add_question_func, add_question_on_hold, get_questions_on_hold
 from blog.nlp_project import login as main_login, singup as main_singup
-
 
 # Create your views here.
 
@@ -57,7 +56,7 @@ def process(request):
     temp_answer = get_answer(temp_question)
     if temp_answer == False:
         temp_answer = "Your question is put on hold and would be answered ASAP. please."
-
+        add_question_on_hold(temp_question)
     # temp_answer = temp_question
 
     return render(request, 'blog/process.html', {'answer':temp_answer})
@@ -88,7 +87,7 @@ def add_question(request):
               '\nk2: '+ keyword2 +
               '\nc: '+category
               )
-        add_question_func(question,parameter1,parameter2,keyword1,keyword2,answer)
+        add_question_func(question,parameter1,parameter2,keyword1,keyword2,answer, category)
         # Redirectiong to list
         contacts_orignal = get_questions('0', '20000')
         page = request.GET.get('page')
@@ -119,3 +118,28 @@ def questions_list(request):
         contacts = contacts_paginator.get_page(contacts.paginator.num_pages)
 
     return render(request, 'blog/questions_list.html', {'questions_dict':questions_dict, 'contacts': contacts})
+
+def questions_list_onhold(request):
+
+    # Working code
+    questions = get_questions_on_hold()
+    paginator = Paginator(questions, 5)  # Show 25 contacts per page
+    questions = paginator.get_page(1)
+    questions_dict = {i: list(questions[i]) for i in range(0, len(questions))}
+
+    # Sample code
+    contacts_orignal = get_questions_on_hold()
+    page = request.GET.get('page')
+    contacts_paginator = Paginator(contacts_orignal, 5)
+    contacts = contacts_paginator.get_page(page)
+
+    if page :
+        contacts = contacts_paginator.get_page(page)
+    else:
+        contacts = contacts_paginator.get_page(contacts.paginator.num_pages)
+
+    return render(request, 'blog/questions_list_onhold.html', {'questions_dict':questions_dict, 'contacts': contacts})
+
+# def casual(request):
+#     return render(request, 'blog/casual/login.html', {})
+
