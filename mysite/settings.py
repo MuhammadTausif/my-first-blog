@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from os import path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# The first line was replaced.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = path.dirname(path.realpath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -78,6 +81,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# Database in djangogril was working, now it is changed in base dir to mysite
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
