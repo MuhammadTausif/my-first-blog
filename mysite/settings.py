@@ -16,7 +16,7 @@ from os import path
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # The first line was replaced.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = path.dirname(path.realpath(__file__))
+# BASE_DIR = path.dirname(path.realpath(__file__))
 
 
 # Quick-start development settings - unsuitable for production

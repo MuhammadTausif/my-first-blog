@@ -120,6 +120,6 @@ def get_answer(var_question):
         if( len(set(keywords_category3) & set(selected_keyword)) > 0):
             return selected_items[0] + ' and ' + selected_items[1] + ' can be ' + selected_keyword[1]
 
-# get_distinct_items_and_save()
-# while True:
-#    print(get_answer(input('Question: ')))
+get_distinct_items_and_save()
+while True:
+   print(get_answer(input('Question: ')))
