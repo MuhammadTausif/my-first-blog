@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.paginator import Paginator
+from django.contrib.auth.models import User
+from django.db import IntegrityError
 
 from blog.main_function import get_answer
 from blog.question_function import get_questions, add_question_func, add_question_on_hold, get_questions_on_hold
 from blog.nlp_project import login as main_login, singup as main_singup
+from django.contrib.auth import authenticate, login
 
 # Create your views here.
 
@@ -22,6 +25,38 @@ def post_list(request):
         return redirect('/question')
         # return render(request, 'blog/question.html')
     return render(request, 'blog/post_list.html', {})
+
+def login_d(request):
+    # posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    temp_login_email = request.GET.get('email', '')
+    temp_login_pass = request.GET.get('pass', '')
+    user = authenticate(request, username=temp_login_email, password=temp_login_pass)
+    if user is not None:
+        return redirect('/question')
+        # return render(request, 'blog/question.html')
+    return render(request, 'blog/post_list.html', {})
+
+def singup_d(request):
+    if request.method == 'POST':
+        try:
+            first_name = request.POST.get('firstname', '')
+            last_name = request.POST.get('lastname', '')
+            temp_email = request.POST.get('email', '')
+            temp_pass = request.POST.get('pass', '')
+            user = User.objects.create_user(temp_email, temp_email, temp_pass)
+            print(first_name + ' : ' + last_name)
+            user.first_name = first_name
+            user.last_name = last_name
+            user.save()
+        except IntegrityError:
+            # user already exists
+            status = 'user already exists'
+            return render(request, 'blog/singup_d.html', { 'status': status })
+        else:
+            status = 'new user was created'
+            return redirect('/login_d')
+
+    return render(request, 'blog/singup_d.html', {})
 
 def login(request):
     return render(request, 'blog/login.html', {})
@@ -118,6 +153,28 @@ def questions_list(request):
         contacts = contacts_paginator.get_page(contacts.paginator.num_pages)
 
     return render(request, 'blog/questions_list.html', {'questions_dict':questions_dict, 'contacts': contacts})
+
+def users_list(request):
+
+    # Working code
+    questions = get_questions('0','100')
+    paginator = Paginator(questions, 5)  # Show 25 contacts per page
+    questions = paginator.get_page(1)
+    questions_dict = {i: list(questions[i]) for i in range(0, len(questions))}
+
+    # Sample code
+    contacts_orignal = get_questions('0','20000')
+    contacts_orignal = User.objects.all();
+    page = request.GET.get('page')
+    contacts_paginator = Paginator(contacts_orignal, 5)
+    contacts = contacts_paginator.get_page(page)
+
+    if page :
+        contacts = contacts_paginator.get_page(page)
+    else:
+        contacts = contacts_paginator.get_page(contacts.paginator.num_pages)
+
+    return render(request, 'blog/users_list.html', {'questions_dict':questions_dict, 'contacts': contacts})
 
 def questions_list_onhold(request):
 

@@ -160,7 +160,6 @@ def get_answer(var_question):
     selected_items = []
     selected_keyword = []
 
-
     for x in var_items:
         if(x.lower() in var_questoin.lower()):
             selected_items.append(x.lower())
