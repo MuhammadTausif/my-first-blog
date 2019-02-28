@@ -34,7 +34,7 @@ def login_d(request):
     if user is not None:
         return redirect('/question')
         # return render(request, 'blog/question.html')
-    return render(request, 'blog/post_list.html', {})
+    return render(request, 'blog/login_d.html', {})
 
 def singup_d(request):
     if request.method == 'POST':
@@ -54,7 +54,7 @@ def singup_d(request):
             return render(request, 'blog/singup_d.html', { 'status': status })
         else:
             status = 'new user was created'
-            return redirect('/login_d')
+            return redirect('/login')
 
     return render(request, 'blog/singup_d.html', {})
 

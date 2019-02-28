@@ -188,3 +188,5 @@ def get_answer(var_question):
 
 # while True:
 #     print(get_answer(input('Q: ')))
+
+# SeriesA_pn 044 can be used together with SeriesA_pn 043
