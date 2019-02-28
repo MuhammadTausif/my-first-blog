@@ -4,15 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/mysite/settings.py" line="87" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d26bfd-1364-4214-8a86-5136334417ab" name="Default Changelist" comment="Question adding works.">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/login_d.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/singup_d.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/users_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/user_function.py" afterDir="false" />
+    <list default="true" id="c9d26bfd-1364-4214-8a86-5136334417ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/main_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/main_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/users_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/users_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/users_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="255">
+              <caret line="181" selection-start-line="181" selection-end-line="181" />
             </state>
           </provider>
         </entry>
@@ -556,7 +550,7 @@
       <workItem from="1551156595732" duration="10093000" />
       <workItem from="1551232461799" duration="1679000" />
       <workItem from="1551240280094" duration="1237000" />
-      <workItem from="1551351369555" duration="6408000" />
+      <workItem from="1551351369555" duration="7054000" />
     </task>
     <task id="LOCAL-00001" summary="files updated.">
       <created>1548261672118</created>
@@ -824,11 +818,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551166825794</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="User list, login, and singup added.">
+      <created>1551359053591</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1551359053591</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192491000" />
+    <option name="totallyTimeSpent" value="193137000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -935,7 +936,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Quit Action edited." />
     <MESSAGE value="Quit Question Edited." />
     <MESSAGE value="Alpha Verion Questioning Completed." />
     <MESSAGE value="Singup/login page linked." />
@@ -960,7 +960,8 @@
     <MESSAGE value="On hold questions are added and listed." />
     <MESSAGE value="db.sqlite3 copies to mysite." />
     <MESSAGE value="Question adding works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Question adding works." />
+    <MESSAGE value="User list, login, and singup added." />
+    <option name="LAST_COMMIT_MESSAGE" value="User list, login, and singup added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1427,8 +1428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/users_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="255">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
         </state>
       </provider>
     </entry>
