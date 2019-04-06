@@ -22,7 +22,7 @@ def get_distinct_items( colmun_name):
     conn = create_connection()
     with conn:
         cur = conn.cursor()
-        sql ="SELECT DISTINCT "+ colmun_name +" from answers"
+        sql ="SELECT DISTINCT lower("+ colmun_name +") from answers"
         cur.execute(sql)
         rows = cur.fetchall()
         items = ["%s" % x for x in rows]
@@ -63,53 +63,53 @@ def execute_sql(selected_items, selected_keyword):
         if len(selected_items) == 1:
             if len(selected_keyword) == 1:
                 # Four attempts
-                sql = "SELECT detailedanswer FROM answers WHERE  keyword1 = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter2 is NULL"
+                sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter2 is NULL"
                 cur.execute(sql)
                 rows = cur.fetchall()
                 if len(rows)>0:
                     return (rows[0])[0]
                 else:
-                    sql = "SELECT detailedanswer FROM answers WHERE  keyword2 = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter2 is NULL"
+                    sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter2 is NULL"
                     cur.execute(sql)
                     rows = cur.fetchall()
                     if len(rows)>0:
                         return (rows[0])[0]
                     else:
-                        sql = "SELECT detailedanswer FROM answers WHERE  keyword1 = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter1 is NULL"
+                        sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND lower(parameter2) = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter1 is NULL"
                         cur.execute(sql)
                         rows = cur.fetchall()
                         if len(rows)>0:
                             return (rows[0])[0]
                         else:
-                            sql = "SELECT detailedanswer FROM answers WHERE  keyword2 = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter1 is NULL"
+                            sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter2) = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter1 is NULL"
                             cur.execute(sql)
                             rows = cur.fetchall()
                             if len(rows)>0:
                                 return (rows[0])[0]
             elif len(selected_keyword) == 2:
                 # Four attempts
-                sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword2 = '"+selected_keyword[1]+"' AND parameter2 is NULL"
+                sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '" + selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND lower(keyword2) = '"+selected_keyword[1]+"' AND parameter2 is NULL"
                 # print(sql)
                 cur.execute(sql)
                 rows = cur.fetchall()
                 if len(rows) > 0:
                     return (rows[0])[0]
                 else:
-                    sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword2 = '"+selected_keyword[1]+"' AND parameter1 is NULL"
+                    sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '" + selected_keyword[0] + "' AND parameter2 = '" + selected_items[0] + "' AND lower(keyword2) = '" + selected_keyword[1] + "' AND parameter1 is NULL"
                     # print(sql)
                     cur.execute(sql)
                     rows = cur.fetchall()
                     if len(rows) > 0:
                         return (rows[0])[0]
                     else:
-                        sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword1 = '"+selected_keyword[1]+"' AND parameter2 is NULL"
+                        sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND lower(keyword1) = '"+selected_keyword[1]+"' AND parameter2 is NULL"
                         # print(sql)
                         cur.execute(sql)
                         rows = cur.fetchall()
                         if len(rows) > 0:
                             return (rows[0])[0]
                         else:
-                            sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword1 = '"+selected_keyword[1]+"' AND parameter1 is NULL"
+                            sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter2) = '"+selected_items[0]+"' AND lower(keyword1) = '"+selected_keyword[1]+"' AND parameter1 is NULL"
                             # print(sql)
                             cur.execute(sql)
                             rows = cur.fetchall()
@@ -119,25 +119,25 @@ def execute_sql(selected_items, selected_keyword):
         elif len(selected_items) == 2:
             if len(selected_keyword) == 1:
                 # Four attempts
-                sql = "SELECT detailedanswer FROM answers WHERE  keyword1 = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter2 = '"+selected_items[1]+"'"
+                sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND keyword2 is NULL AND lower(parameter2) = '"+selected_items[1]+"'"
                 cur.execute(sql)
                 rows = cur.fetchall()
                 if len(rows) > 0:
                     return (rows[0])[0]
                 else:
-                    sql = "SELECT detailedanswer FROM answers WHERE  keyword1 = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword2 is NULL AND parameter1 = '"+selected_items[1]+"'"
+                    sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword1) = '"+selected_keyword[0]+"' AND lower(parameter2) = '"+selected_items[0]+"' AND keyword2 is NULL AND lower(parameter1) = '"+selected_items[1]+"'"
                     cur.execute(sql)
                     rows = cur.fetchall()
                     if len(rows) > 0:
                         return (rows[0])[0]
                     else:
-                        sql = "SELECT detailedanswer FROM answers WHERE  keyword2 = '"+selected_keyword[0]+"' AND parameter1 = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter2 = '"+selected_items[1]+"'"
+                        sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter1) = '"+selected_items[0]+"' AND keyword1 is NULL AND lower(parameter2) = '"+selected_items[1]+"'"
                         cur.execute(sql)
                         rows = cur.fetchall()
                         if len(rows) > 0:
                             return (rows[0])[0]
                         else:
-                            sql = "SELECT detailedanswer FROM answers WHERE  keyword2 = '"+selected_keyword[0]+"' AND parameter2 = '"+selected_items[0]+"' AND keyword1 is NULL AND parameter1 = '"+selected_items[1]+"'"
+                            sql = "SELECT detailedanswer FROM answers WHERE  lower(keyword2) = '"+selected_keyword[0]+"' AND lower(parameter2) = '"+selected_items[0]+"' AND keyword1 is NULL AND lower(parameter1) = '"+selected_items[1]+"'"
                             cur.execute(sql)
                             rows = cur.fetchall()
                             if len(rows) > 0:

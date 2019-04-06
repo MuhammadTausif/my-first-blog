@@ -107,13 +107,13 @@ def add_question_v(request):
 
 def add_question(request):
     if request.method == 'POST':
-        question = request.POST.get('question', '')
-        answer = request.POST.get('answer', '')
-        category = request.POST.get('category', '')
-        parameter1 = request.POST.get('parameter1', '')
-        parameter2 = request.POST.get('parameter2', '')
-        keyword1 = request.POST.get('keyword1', '')
-        keyword2 = request.POST.get('keyword2', '')
+        question = request.POST.get('question')
+        answer = request.POST.get('answer')
+        category = request.POST.get('category')
+        parameter1 = request.POST.get('parameter1')
+        parameter2 = request.POST.get('parameter2')
+        keyword1 = request.POST.get('keyword1')
+        keyword2 = request.POST.get('keyword2')
         print('Values:\n Q' + question +
               '\nA: '+ answer+
               '\nP1: '+ parameter1+

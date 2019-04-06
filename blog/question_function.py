@@ -1,7 +1,7 @@
 import sqlite3
-from sqlite3 import Error
-from os import path
 from datetime import datetime
+from os import path
+from sqlite3 import Error
 
 ROOT = path.dirname(path.realpath(__file__))
 
@@ -39,8 +39,18 @@ def add_question_func(question_text, parameter1_text, parameter2_text, keyword1_
 
     with conn:
         cur = conn.cursor()
-        sql  = "INSERT INTO answers(question, parameter1, parameter2, keyword1, keyword2, detailedanswer, module_ID) " \
-               "VALUES('"+ question_text +"','"+parameter1_text+"','"+parameter2_text+"','"+keyword1_text+"','"+keyword2_text+"','"+detailedanswer_text+"','"+category_text+"')  "
+        if (parameter2_text == '' and keyword2_text == ''):
+            sql = "INSERT INTO answers(question, parameter1, keyword1, detailedanswer, module_ID) " \
+                  "VALUES('" + question_text + "','" + parameter1_text + "','" + keyword1_text + "','" + detailedanswer_text + "','" + category_text + "')  "
+        elif (keyword2_text == ''):
+            sql = "INSERT INTO answers(question, parameter1, parameter2, keyword1, detailedanswer, module_ID) " \
+                  "VALUES('" + question_text + "','" + parameter1_text + "','" + parameter2_text + "','" + keyword1_text + "','" + detailedanswer_text + "','" + category_text + "')  "
+        elif (parameter2_text == ''):
+            sql = "INSERT INTO answers(question, parameter1, keyword1, keyword2, detailedanswer, module_ID) " \
+                  "VALUES('" + question_text + "','" + parameter1_text + "' ,'" + keyword1_text + "','" + keyword2_text + "','" + detailedanswer_text + "','" + category_text + "')  "
+        else:
+            sql = "INSERT INTO answers(question, parameter1, parameter2, keyword1, keyword2, detailedanswer, module_ID) " \
+                  "VALUES('" + question_text + "','" + parameter1_text + "','" + parameter2_text + "','" + keyword1_text + "','" + keyword2_text + "','" + detailedanswer_text + "','" + category_text + "')  "
         try:
             temp = cur.execute(sql )
             if cur.lastrowid > 0:
